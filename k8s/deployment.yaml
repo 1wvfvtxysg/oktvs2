@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fdytsxh
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fdytsxh
+  template:
+    metadata:
+      labels:
+        app: fdytsxh
+    spec:
+      containers:
+      - image: okteto.dev/fdytsxh:latest
+        name: fdytsxh
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: Site
+          value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
+        - name: Vless_UUID
+          value: "282299e6-af6a-4aa2-bf41-83803ae178b8"
+        - name: Vless_Path
+          value: "/fghyjtsgu"
+        - name: Vmess_UUID
+          value: "282299e6-af6a-4aa2-bf41-83803ae178b8"
+        - name: Vmess_Path
+          value: "/fdbjtxgjhtd"
+        - name: Share_Path
+          value: "/v2link"
